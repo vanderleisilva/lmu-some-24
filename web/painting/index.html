@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generative Starry Night</title>
+    <style>
+      body {
+        margin: 0;
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 0.2679665616246498) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: calc(100vh - 16px);
+        gap: 8px;
+        margin: 8px;
+      }
+      main {
+        flex-grow: 2;
+      }
+      header {
+        display: flex;
+        gap: 8px;
+      }
+      header input {
+        flex-grow: 2;
+        padding: 8px;
+      }
+      header button {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <input id="amount" type="number" value="10" />
+        <button id="paint">Paint</button>
+      </header>
+      <main id="container"></main>
+    </section>
+    <script src="./painting.js"></script>
+  </body>
+</html>

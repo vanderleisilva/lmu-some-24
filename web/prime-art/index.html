@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./prime-art.js"></script>
+    <style>
+      #result {
+        margin-top: 10px;
+        display: flex;
+        font-size: 22px;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      #result span {
+        padding: 3px;
+        width: 60px;
+        text-align: center;
+        border: solid 1px;
+      }
+      .not-prime {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="text" value="" />
+      <button onclick="generate()">Generate</button>
+    </div>
+    <div id="result"></div>
+  </body>
+</html>
