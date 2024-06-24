@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fractal Tree</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        gap: 10px;
+      }
+      canvas {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="depth" value="2" />
+      <button onclick="draw()">Draw</button>
+    </div>
+    <canvas id="fractalTreeCanvas" width="800" height="600"></canvas>
+    <script src="./tree.js"></script>
+  </body>
+</html>
